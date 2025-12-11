@@ -504,9 +504,9 @@
                                                         <MapIcon size={14} className="mr-1" /> 🗺️ Ver Recorrido
                                                      </button>
                                                  )}
-                                                 {(act.ticketUrl || act.priceDKK > 0) && (
+                                                 {act.ticketUrl && (
                                                     <button 
-                                                        onClick={(e) => { e.stopPropagation(); if(act.ticketUrl) window.open(act.ticketUrl, '_blank'); }}
+                                                        onClick={(e) => { e.stopPropagation(); window.open(act.ticketUrl, '_blank'); }}
                                                         className="flex items-center text-xs font-medium bg-orange-50 text-orange-700 px-3 py-1.5 rounded-lg border border-orange-200 whitespace-nowrap"
                                                     >
                                                         <Ticket size={14} className="mr-1" /> Tickets
